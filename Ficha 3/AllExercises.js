@@ -79,6 +79,7 @@ calculator(num1,num2,operator)
 
 //* d
 
+/*
 function BMIcalculator(calculatedBMI) {
 
     if (calculatedBMI < 18,5) {
@@ -97,7 +98,7 @@ function BMIcalculator(calculatedBMI) {
         alert(`Your BMI is ${calculatedBMI}, which puts you in the cathegory`);
     }
     else{
-        alert(`Please insert a valid operator`)
+        alert(`Something went wrong.`)
     }
     }
     
@@ -107,3 +108,58 @@ function BMIcalculator(calculatedBMI) {
     
     BMIcalculator(calculatedBMI)
 
+*/
+
+//* d
+
+/*
+function wordsInEcho(string,n) {
+    let echo =Array(n+1).join(string);
+    alert(echo);
+    }
+    
+    let string = prompt("Please insert a string.");
+    let n = parseInt(prompt("Please insert a number."));
+    
+    wordsInEcho(string,n);
+
+*/
+
+/*
+function whatsInBetween(firstNumber, secondNumber) {
+    numbers=[];
+    for (let i = firstNumber; i < secondNumber; i++ ) {
+        numbers.push(" "+ i);
+
+        return numbers;
+    }
+    alert(`These are the numbers between ${firstNumber} and ${secondNumber}: ${numbers} `);
+    }
+    
+    let firstNumber = parseInt(prompt("Please insert a number."));
+    let secondNumber = parseInt(prompt("Please insert another number."));
+    
+    whatsInBetween(firstNumber,secondNumber);
+*/
+
+/*
+
+function whatIsTheMin(2, 5){
+    let minimum = Math.min(2,5);
+    return minimum;
+};
+
+
+whatIsTheMin(2, 5);
+alert(minimum);
+
+*/
+
+function multiplicationTable(multiNumber) {
+    console.log(`This is ${multiNumber}'s multiplication table:`)
+    for (let i = 1; i<=10; i++)
+    console.log(`${i} x ${multiNumber} = ${i * multiNumber}`)
+}
+
+let multiNumber = parseInt(prompt("Please insert a number."));
+multiplicationTable(multiNumber);
