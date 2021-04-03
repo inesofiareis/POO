@@ -11,5 +11,6 @@ switch(a) {
     case 2:
     case 3:
         console.log("2,3");
+        break;
     
 }

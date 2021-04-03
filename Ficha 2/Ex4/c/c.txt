@@ -1,0 +1,2 @@
+the result of the first one is 1 2 3 4 
+the second one outputs 0 1 2 3 4

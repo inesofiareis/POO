@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Buy</title>
+</head>
+<body>
+    <form action="">
+        <label for="productName">Nome:</label>
+        <input type="text" name="productName" id="productName" required>
+        <br>
+        <br>
+        <label for="Cathegory">Categoria:</label>
+        <select name="Categoria" id="Cathegory" required>
+            <option value=""></option>
+            <option value="Fruta">Fruta</option>
+            <option value="Legumes">Legumes</option>
+            <option value="Carne">Carne</option>
+            <option value="Peixe">Peixe</option>
+            <option value="Bebida">Bebida</option>
+            <option value="Outros">Outros</option>
+        </select>
+        <br>
+        <br>
+        <label for="quantity">Quantidade:</label>
+        <input type="number" name="quantity" id="quantity" min="1" max="100" required>
+        <br>
+        <br>
+        <input type="submit" value="ADICIONAR" id="add">
+    </form>
+    <hr>
+    <table id="Table">
+        <tr>
+            <th>Nome</th> <th>Categoria</th> <th>Quantidade</th> <th>Mais</th>
+        </tr>
+    </table>
+    <hr>
+    <button id="generalCount">CONTAR GERAL</button>
+    <button id="cathegoryCount">CONTAR POR CATEGORIA</button>
+    <button id="clean">LIMPAR LISTA</button>
+    
+    <script src="2buy.js"></script>
+</body>
+</html>
+

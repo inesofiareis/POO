@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="formAddGames">
+        <label for="gameName">Nome do jogo</label>
+        <input type="text" name="gameName" id="gameName" size="20" required>
+        <br>
+        <br>
+
+        <label for="gameYear">Ano</label>
+        <input type="number" name="gameYear" id="gameYear" required min='1900' max='2021'>
+        <br>
+        <br>
+
+        <label for="gameGenre">Género</label>
+        <select name="gameGenre" id="gameGenre">
+            <option value="action">Ação</option>
+            <option value="adventure">Aventura</option>
+            <option value="estrategy">Estratégia</option>
+            <option value="sports" selected >Desporto</option>
+            <option value="simulation">Simulação</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="gameCover">Url da imagem</label>
+        <input type="url" name="gameCover" id="gameCover">
+        <br>
+        <br>
+        <input type="submit" value="Adicionar">
+        <input type="reset" value="Limpar">
+        
+
+    </form>
+
+
+<br> </br>
+<br> </br>
+
+        <hr>
+
+        <br> </br>
+        <table id="tablesub" cellspacing ="20">
+            <tr>
+                <th>
+                    Nome
+                </th>
+
+                <th>
+                    Ano
+                </th>
+
+                <th>
+                    Género
+                </th>
+
+                <th>
+                    Capa
+                </th>
+
+                <th>
+                    Opções
+                </th>
+            </tr>
+        </table>
+
+
+
+
+
+    <script src="ex2.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 // a 
 
-// No, since this is a falsy value
+//Yes, since this is not empty
 
 //b
 
