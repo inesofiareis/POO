@@ -1,6 +1,6 @@
-let form = document.getElementById("formAddGames");
+let submit = document.getElementById("submit");
 
-form.addEventListener("submit", function(event) {
+submit.addEventListener("click", function(event) {
 
 
     let gameYear = document.getElementById("gameYear");
@@ -11,23 +11,16 @@ form.addEventListener("submit", function(event) {
     }
     else {
         alert("Validação Ok")
-        addGameToTable();
-        form.reset();
-    }
-    event.preventDefault();
-});
-
-    function addGametoTable() {
         let table = document.querySelector("#tablesub");
 
         let name = document.getElementById("gameName").value;
         let year = document.getElementById("gameYear").value;
         let genre = document.getElementById("gameGenre").value;
         let url = document.getElementById("cover").value;
-        let opt = `<button id="remove" onclick="remove()"></button>`
+        let opt = `<button class="remove" value="x"></button>`
 
         table.innerHTML += `
-        <tr>
+        <tr class= 'Jogo'>
             <td>
                 ${name}
             </td>
@@ -48,5 +41,28 @@ form.addEventListener("submit", function(event) {
                 ${opt}
             </td>
 
-        </tr> `
+        </tr> `;
+
+
+        const buttons = document.getElementsByClassName("remove");
+        for (let button of buttons ) {
+            button.addEventListener("click", function() {
+
+                this.parentNode.parentNode.remove();
+
+
+            });
+        }
+
+
+
+
+
     }
+
+
+
+    event.preventDefault();
+});
+
+

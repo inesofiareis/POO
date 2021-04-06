@@ -83,9 +83,9 @@ calculator(num1,num2,operator)
 function BMIcalculator(calculatedBMI) {
 
     if (calculatedBMI < 18,5) {
-        alert(`Your BMI is ${calculatedBMI}, which puts you in the cathegory`);
+        alert(`Your BMI is ${calculatedBMI}, which puts you in the Bellow Weight cathegory`);
     }
-    else if (calculatedBMI == '+') {
+    else if (calculatedBMI >= 18.5 && calculatedBMI =< 24.9) {
         alert(`Your BMI is ${calculatedBMI}, which puts you in the cathegory`);
     }
     else if (calculatedBMI == '-') { 
@@ -110,11 +110,11 @@ function BMIcalculator(calculatedBMI) {
 
 */
 
-//* d
+//* e
 
 /*
 function wordsInEcho(string,n) {
-    let echo =Array(n+1).join(string);
+    let echo = Array(n+1).join(string);
     alert(echo);
     }
     
@@ -155,11 +155,68 @@ alert(minimum);
 
 */
 
-function multiplicationTable(multiNumber) {
+/* function multiplicationTable(multiNumber) {
     console.log(`This is ${multiNumber}'s multiplication table:`)
     for (let i = 1; i<=10; i++)
     console.log(`${i} x ${multiNumber} = ${i * multiNumber}`)
 }
 
 let multiNumber = parseInt(prompt("Please insert a number."));
-multiplicationTable(multiNumber);
+multiplicationTable(multiNumber); */
+
+
+
+
+/* function numbersSum(){
+    let result = 0 //arguments é um objeto que permite aceder a estas cenas
+    for (let i = 0; i < arguments.length; i++) {
+        result += arguments[i];
+    }
+    alert(result);
+}
+
+numbersSum(4,8,10,12)
+numbersSum(2,4,5) */
+
+/* 
+friendCounter("Inês", "Reis", "Bruna", "Diana", "Daniel");
+
+function friendCounter(nome,apelido,amigos) {
+    alert(`A ${nome} ${apelido} tem ${amigos.length - 2} amigos!`)
+} */
+
+/* let num1 = prompt("Please insert a number: ");
+let num2 = prompt("Please insert another number: ");
+
+min(num1,num2)
+
+
+function min(a,b) {
+    if (a>b) {
+        alert (`O mínimo de ${a} e ${b} é ${b}`)
+    }
+    else if (b>a) {
+        alert (`O mínimo de ${a} e ${b} é ${a}`)
+    }
+    else {
+        alert (`Os números são iguais`)
+    }
+} */
+
+/* let num1 = prompt("Please insert a number: ");
+let num2 = prompt("Please insert another number: ");
+
+pow(num1,num2)
+
+
+function pow(a,b) {
+    if (b < 1) {
+        b = prompt("Por favor insira um número maior que 1")
+        pow(a,b)
+    }
+    else{
+        c = a**b;
+        alert (`${a} elevado a ${b} é ${c}`)
+    }
+} */
+

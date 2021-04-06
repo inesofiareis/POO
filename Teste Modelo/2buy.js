@@ -41,9 +41,9 @@ addButton.addEventListener("click", function (event) {
             botao.addEventListener("click", function () {
                 if (this.parentNode.parentNode.cells[2].innerHTML == "1") {
                     this.parentNode.parentNode.remove()
-                } else {
-                    this.parentNode.parentNode.cells[2].innerHTML = +this.parentNode.parentNode.cells[2].innerHTML - 1; //O mais antes do this transforma o string em numero
+                } else {his.parentNode.parentNode.cells[2].innerHTML = +this.parentNode.parentNode.cells[2].innerHTML - 1; //O mais antes do this transforma o string em numero
                 }
+                    t
             })
         };
 

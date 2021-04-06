@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" id="formAddParticipants">
+
+        <!--  NOME -->
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" size="20" required>
+
+        <br>
+        <br>
+
+        <!-- CURSO -->
+        <label for="course">Curso</label>
+        <br>
+        <label for="TSIW">TSIW</label>
+        <input type="radio" name="course" id="TSIW" value="TSIW" required>
+        <br>
+        <label for="multimedia">Multimédia</label>
+        <input type="radio" name="course" id="multimedia" value="multimedia" required>
+        <br>
+        <label for="TCAV">TCAV</label>
+        <input type="radio" name="course" id="TCAV" value="TCAV" required>
+        <br>
+        <label for="desgin">Design</label>
+        <input type="radio" name="course" id="design" value="design" required>
+        <br>
+        <label for="fotografia">Fotografia</label>
+        <input type="radio" name="course" id="fotografia" value="fotografia" required>
+
+
+        <br>
+        <br>
+
+        <!-- PERFIL -->
+        <label for="profile">Perfil</label>
+        <select name="profile" id="profile">
+            <option value="student" selected>Estudante</option>
+            <option value="teacher">Docente</option>
+            <option value="worker">Funcionário</option>
+            <option value="other">Outro</option>
+        </select>
+
+
+        <br>
+        <br>
+
+        <!-- SESSÃO -->
+        <label for="session">Sessão</label>
+
+        <label for="manha">Manhã</label>
+        <input type="checkbox" name="session" id="manha" value="manha">
+
+        <label for="noite">Noite</label>
+        <input type="checkbox" name="session" id="noite" value="noite">
+
+
+        <br>
+        <br>
+
+        <!-- BOTÕES -->
+        <input type="submit" value="Adicionar" id="submit">
+        <input type="button" value="Contar" id="count">
+
+
+    </form>
+
+
+    <br> </br>
+    <br> </br>
+
+    <hr>
+
+    <br> </br>
+
+    <!-- TABELA -->
+    <table id="tablesub" cellspacing="20">
+        <tr>
+            <th>
+                Nome
+            </th>
+
+            <th>
+                Curso
+            </th>
+
+            <th>
+                Perfil
+            </th>
+
+            <th>
+                Sessão
+            </th>
+
+        </tr>
+    </table>
+
+<script src="ex3.js"></script>
+
+</body>
+
+</html>
