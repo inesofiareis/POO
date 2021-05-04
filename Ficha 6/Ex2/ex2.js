@@ -8,8 +8,8 @@ let select = document.getElementById("colours");
 addButton.addEventListener('click', function () {
 
     newValue= prompt ("Que cor deseja adicionar?")
-    select.innerHTML += `<option value="${newValue}">${newValue}</option>`
-
+    
+select.innerHTML += `<option value="${newValue}">${newValue}</option>`
 });
 
 showButton.addEventListener('click', function () {

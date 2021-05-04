@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteStore</title>
+</head>
+<body>
+    <form action="">
+        <label for="clientName">Nome:</label>
+        <input type="textbox" name="clientName" id="clientName" required>
+        <br>
+        <br>
+        <label for="productName">Selecione um produto:</label>
+        <select name="productName" id="productName" required>
+            <option value=""></option>
+            <option value="500">Desktop</option>
+            <option value="300">Portátil</option>
+            <option value="300">Monitor</option>
+            <option value="20">Teclado</option>
+            <option value="10">Rato</option>
+            <option value="100">Impressora</option>
+            <option value="100">Disco Externo</option>
+            <option value="950">Painel Solar</option>
+        </select>
+        <br>
+        <br>
+
+                <!-- CURSO -->
+                <label for="IVA">IVA</label>
+                <br>
+                <label for="13%">13%</label>
+                <input type="radio" name="IVA" id="13%" value="0.13">
+                <br>
+                <label for="23%">23%</label>
+                <input type="radio" name="IVA" id="23%" value="0.23" checked>
+                <br>
+        <br>
+        <br>
+        <input type="submit" value="ADICIONAR" id="add">
+    </form>
+    <hr>
+    <table id="Table">
+        <tr>
+            <th>PRODUTO</th> <th>QTD</th> <th>PU</th> <th>IVA</th> <th>SUBTOTAL</th>
+        </tr>
+    </table>
+    <hr>
+    <button id="buyProduct">COMPRAR</button>
+    <button id="addProduct">ADICIONAR PRODUTO</button>
+    
+    <script src="WhiteStore.js"></script>
+</body>
+</html>
+
